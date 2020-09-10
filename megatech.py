@@ -5,8 +5,9 @@
 2) Jogar em 3 ou 4 quadrantes diferentes
 3) Duas dezenas com inicio igual e duas diferentes. Ex: (10 12) (25 27) 47 58
 4) Um número que se repete no final da dezena. Ex: 12 22
-5) Opcional: Um par de Números invertidos. Ex: 03 30
-6) Um número em atraso 0 e outro em atraso máximo (Consultar Tabela Gerada).
+5) Um número em atraso máximo (Consultar Tabela Gerada).
+6) Opcional: Um par de Números invertidos. Ex: 03 30
+7) Opcional: Um número do último concurso
     ############################################################## """
 
 # Web Scrapping com Python + Selenium

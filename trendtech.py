@@ -3,6 +3,7 @@
 import time
 import requests
 import pandas as pd
+import numpy as np
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
@@ -18,30 +19,21 @@ driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
 
 driver.get(url)
 
-# 1.1 Garantir que o servidor esteja carregado em 10 segundos
+# 1.1 Garantir que o servidor esteja carregado em 2 segundos
 time.sleep(2)
 
-# 1.2 Simular Cliques na Plataforma
-
-
-# 1.3 Após o clique pegar o elemento que a gente quer
-rota_table = "/html/body/div[2]/div[2]/div/div[2]/div/div[1]/ng-include/div/div/div/div"
-element = driver.find_element_by_xpath(rota_table)
-html_content = element.get_attribute('outerHTML')
-print(html_content)
-
-""" # 2. Parsear o conteúdo HTML - BeautifulSoup
-soup = BeautifulSoup(html_content, 'html.parser')
-table = soup.find(name='table')
+# 1.2 Pegar o elemento que a gente quer
+rota_table = "//span[@ng-repeat='titlePart in titleArray']"
+element = driver.find_elements_by_xpath(rota_table)
+html_content = []
+for span in element:
+    html_content.append(span.get_attribute('textContent').strip())
 
 # 3. Estruturar o conteúdo em um Dataframe - Pandas
-data = pd.read_html(str(table))[0]
+data = pd.DataFrame(np.array(html_content), columns=['Trends'])
 
-# 3.1 Tratar dados da tabela
+# 3.1 Printar dados da tabela
 
 print(data)
-
-# Opcional. Transformar os dados em um dicionário próprio
-# Opcional. Converter e salvar em um arquivo JSON """
 
 driver.quit()
