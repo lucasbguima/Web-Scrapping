@@ -1,9 +1,8 @@
 # Web-Scrapping
- Python + Selenium + BS4 + Pandas
 
 <p><b>Python + Selenium + BS4 + Pandas</b><br/></p>
 
-<p>Lista de Aplicativos:</p>
+<p>Lista de Projetos:</p>
 
 Programa            | Aplicação | Versão | Linguagem
 ----------------- | -------- | :---------: | :---------:
