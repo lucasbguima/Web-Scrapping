@@ -6,5 +6,5 @@
 
 Programa            | Aplicação | Versão | Linguagem
 ----------------- | -------- | :---------: | :---------:
-[Megatech](https://github.com/lucasbguima/Aplicativos/blob/master/Aplicativo%20de%20Tickets/ticket.c)  | Web Scrapping com Resultados da Mega-Sena em tempo real.| 1.0 | Python
-[Trendtech](https://github.com/lucasbguima/Aplicativos/tree/master/Aplicativo%20Fockus)  | Web Scrapping com Trends Topics em tempo real. | 1.0  | Python
+[Megatech](https://github.com/lucasbguima/Web-Scrapping/blob/master/megatech.py)  | Web Scrapping com Resultados da Mega-Sena em tempo real.| 1.0 | Python
+[Trendtech](https://github.com/lucasbguima/Web-Scrapping/blob/master/trendtech.py)  | Web Scrapping com Trends Topics em tempo real. | 1.0  | Python
